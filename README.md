@@ -3,7 +3,7 @@ dotfiles for hyprland
 
 Compositor: hyprland
 Bar: waybar
-Menu: rofi-waland
+Menu: rofi-wayland
 File Explorer: ranger
 
 
