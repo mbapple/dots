@@ -1,14 +1,24 @@
 #!/bin/bash
 
 # Define paths
-GIT_REPO_PATH="/path/to/your/git/repo"  # Replace with the actual path to your Git repository
+GIT_REPO_PATH="/home/matthew/GitHub/dots"  # Replace with the actual path to your Git repository
 CONFIGS_PATHS=(
-  "/etc/your_config1.conf"
-  "/etc/your_config2.conf"
-  "/home/matthew/.config/hyprland/hyprland.conf"
-  "/home/matthew/.config/otherapp/otherapp.conf"  # Replace with actual paths
-  "/home/matthew/.config"  # Entire config directory
-  # Add more specific files or directories as necessary
+  "/etc/sddm.conf.d/theme.conf.user"
+  "/usr/share/sddm/themes/simple-sddm"
+  "/home/matthew/.config/hypr"
+  "/home/matthew/.config/ranger"
+  "/home/matthew/.config/xsettingsd" 
+  "/home/matthew/.config/nwg-look" 
+  "/home/matthew/.config/kitty" 
+  "/home/matthew/.config/gtk-2.0" 
+  "/home/matthew/.config/gtk-3.0" 
+  "/home/matthew/.config/wlogout"
+  "/home/matthew/.config/waybar" 
+  "/home/matthew/.config/rofi" 
+  "/home/matthew/.config/neofetch" 
+  "/home/matthew/.bashrc"
+  "/home/matthew/.vimrc"
+  "/home/matthew/Pictures/background.jpg"
 )
 
 # Loop over each config file or directory and copy it to the target location
@@ -17,7 +27,7 @@ for CONFIG_PATH in "${CONFIGS_PATHS[@]}"; do
   BASE_NAME=$(basename "$CONFIG_PATH")
   
   # Define the source path in the git repo
-  SOURCE_PATH="$GIT_REPO_PATH/$BASE_NAME"
+  SOURCE_PATH="$GIT_REPO_PATH$CONFIG_PATH"
   
   # Check if the source file or directory exists in the Git repo
   if [ -e "$SOURCE_PATH" ]; then
@@ -36,5 +46,4 @@ for CONFIG_PATH in "${CONFIGS_PATHS[@]}"; do
     echo "Warning: $SOURCE_PATH not found in the Git repo"
   fi
 done
-
 echo "Configuration restoration complete!"

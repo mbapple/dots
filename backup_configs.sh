@@ -16,6 +16,9 @@ CONFIGS_PATHS=(
   "/home/matthew/.config/waybar" 
   "/home/matthew/.config/rofi" 
   "/home/matthew/.config/neofetch" 
+  "/home/matthew/.bashrc"
+  "/home/matthew/.vimrc"
+  "/home/matthew/Pictures/background.jpg"
   # Add more specific files or directories as necessary
 )
 

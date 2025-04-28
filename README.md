@@ -36,9 +36,19 @@ Install relevant yay packages:
 yay -S auto-cpu-freq
 ```
 ## Clone and Install:
+Note, the repo must be cloned into /home/matthew/GitHub"
 ```bash
-cd
+cd /home/matthew/GitHub
 git clone https://github.com/mbapple/dots
 cd dots
+chmod +x restore_configs.sh
 ./restore_configs.sh
 ```
+
+## Backing up configs:
+```bash
+cd /home/matthew/GitHub/dots
+chmod +x backup_configs.sh
+./backup_configs.sh
+```
+Then commit and push.
