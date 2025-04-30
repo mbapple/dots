@@ -29,11 +29,11 @@ makepkg -si
 ```
 Install relevant pacman packages:
 ```bash
-sudo pacman -S --needed waybar htop neofetch tela-circle-icon-theme-blue ttf-roboto-mono-nerd rofi-wayland materia-gtk-theme
+sudo pacman -S --needed waybar htop neofetch tela-circle-icon-theme-blue ttf-roboto-mono-nerd rofi-wayland materia-gtk-theme grim slurp
 ```
 Install relevant yay packages:
 ```bash
-yay -S auto-cpu-freq
+yay -S auto-cpu-freq clipse
 ```
 ## Clone and Install:
 Note, the repo must be cloned into /home/matthew/GitHub"
