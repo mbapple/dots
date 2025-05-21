@@ -19,7 +19,8 @@ CONFIGS_PATHS=(
   "/home/matthew/.bashrc"
   "/home/matthew/.vimrc"
   "/home/matthew/Pictures/background.jpg"
-  # Add more specific files or directories as necessary
+  "/home/matthew/.config/nwg-drawer" 
+# Add more specific files or directories as necessary
 )
 
 # Loop over each config file or directory and copy it to the git repo

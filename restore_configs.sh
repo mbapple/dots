@@ -19,6 +19,7 @@ CONFIGS_PATHS=(
   "/home/matthew/.bashrc"
   "/home/matthew/.vimrc"
   "/home/matthew/Pictures/background.jpg"
+  "/home/matthew/.config/nwg-drawer"
 )
 
 # Loop over each config file or directory and copy it to the target location
