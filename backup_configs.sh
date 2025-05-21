@@ -29,6 +29,9 @@ for CONFIG_PATH in "${CONFIGS_PATHS[@]}"; do
   BASE_NAME=$(basename "$CONFIG_PATH")
  
   DEST_PATH="$GIT_REPO_PATH$CONFIG_PATH"
+  #DEST_PATH="$GIT_REPO_PATH$BADE_NAME"
+  # Remove current backups so duplicates aren't produced
+  rm -r "$DEST_PATH"
   cp -r "$CONFIG_PATH" "$DEST_PATH"
   echo "Copied directory $CONFIG_PATH to $DEST_PATH"
  
