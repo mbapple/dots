@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define paths
-GIT_REPO_PATH="/home/matthew/GitHub/dots" # Replace with the actual path to your Git repository
+GIT_REPO_PATH="/home/matthew/dots" # Replace with the actual path to your Git repository
 CONFIGS_PATHS=(
   "/etc/sddm.conf.d/theme.conf.user"
   "/usr/share/sddm/themes/simple-sddm"
@@ -18,7 +18,6 @@ CONFIGS_PATHS=(
   "/home/matthew/.config/neofetch" 
   "/home/matthew/.bashrc"
   "/home/matthew/.vimrc"
-  "/home/matthew/Pictures/background.jpg"
   "/home/matthew/.config/nwg-drawer" 
 # Add more specific files or directories as necessary
 )

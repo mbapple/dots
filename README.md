@@ -36,9 +36,9 @@ Install relevant yay packages:
 yay -S auto-cpu-freq clipse
 ```
 ## Clone and Install:
-Note, the repo must be cloned into /home/matthew/GitHub"
+Note, the repo must be cloned at /home/matthew"
 ```bash
-cd /home/matthew/GitHub
+cd /home/matthew
 git clone https://github.com/mbapple/dots
 cd dots
 chmod +x restore_configs.sh
@@ -47,7 +47,7 @@ chmod +x restore_configs.sh
 
 ## Backing up configs:
 ```bash
-cd /home/matthew/GitHub/dots
+cd /home/matthew/dots
 chmod +x backup_configs.sh
 ./backup_configs.sh
 ```

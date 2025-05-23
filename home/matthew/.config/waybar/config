@@ -15,6 +15,9 @@
 		"custom/right-arrow-dark",
 		"custom/right-arrow-light",
 		"bluetooth",
+		"custom/right-arrow-dark",
+		"custom/right-arrow-light",
+		"custom/nwg-drawer",
 		"custom/right-arrow-dark"
 	],
 	"modules-center": [
@@ -222,5 +225,11 @@
     "format": "   ",
     "tooltip": false,
     "on-click": "wlogout"
-}
+},
+
+"custom/nwg-drawer": {
+		"format": "  󰀻  ",
+		"tooltip": false,
+		"on-click": "nwg-drawer"
+	}
 }
